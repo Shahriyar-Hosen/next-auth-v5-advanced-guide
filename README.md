@@ -60,13 +60,21 @@ npm i
 ##### dependencies
 
 ```shell
-npm i next-auth@beta @auth/prisma-adapter resend uuid zod bcryptjs react-hook-form @hookform/resolvers next-themes react-icons react-spinners sonner
+npm i next-auth@beta @auth/prisma-adapter resend uuid zod bcryptjs react-hook-form @hookform/resolvers next-themes react-icons react-spinners
 ```
 
 ##### devDependencies
 
 ```shell
 npm i -d @types/uuid @types/bcryptjs
+```
+
+#### 1.2 Install shadcn-ui
+
+#### 1.3 Install shadcn-ui component
+
+```shell
+pnpm dlx shadcn-ui@latest add button card switch form input select sonner dialog dropdown-menu badge
 ```
 
 ### 2. all file and folder added
