@@ -97,12 +97,12 @@ npx prisma db push
 ### Start the app
 
 ```shell
-npm run dev
+pnpm run dev
 ```
 
 ## Available commands
 
-Running commands with (npm or yarn or pnpm) `(npm or yarn or pnpm) run [command]`
+Running commands with pnpm `pnpm run [command]`
 
 | command | description                              |
 | :------ | :--------------------------------------- |
