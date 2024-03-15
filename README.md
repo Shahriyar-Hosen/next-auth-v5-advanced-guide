@@ -1,12 +1,7 @@
-# Next Auth v5 - Advanced Guide (2024)
+<h1 align="center">Next Auth v5 - Advanced Guide</h1>
 
-![image](https://github.com/AntonioErdeljac/next-auth-v5-advanced-guide/assets/23248726/d0175397-8c3f-4e82-91c4-78c14f29bb81)
+#### Key Features:
 
-This is a repository for Next Auth v5 - Advanced Guide (2024)
-
-[VIDEO TUTORIAL](https://youtu.be/1MTyCvS05V4)
-
-Key Features:
 - 🔐 Next-auth v5 (Auth.js)
 - 🚀 Next.js 14 with server actions
 - 🔑 Credentials Provider
@@ -47,36 +42,53 @@ Key Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next-auth-v5-advanced-guide.git
+git clone https://github.com/Shahriyar-Hosen/next-auth-v5-advanced-guide.git
 ```
 
 ### Install packages
+
+###### npm
 
 ```shell
 npm i
 ```
 
+###### yarn
+
+```shell
+yarn add
+```
+
+###### pnpm
+
+```shell
+pnpm i
+```
+
 ### Setup .env file
 
+```env
+# Database Url
+DATABASE_URL="mongodb url"
 
-```js
-DATABASE_URL=
-DIRECT_URL=
+# Next-Auth secret
+AUTH_SECRET=next-auth-secret
 
-AUTH_SECRET=
+# Github and Google id and secret
+GITHUB_CLIENT_ID="Google id from google api console"
+GITHUB_CLIENT_SECRET="Google secret from google api console"
+GOOGLE_CLIENT_ID="Github id from Github -> Settings -> Developer Settings -> OAuth Apps"
+GOOGLE_CLIENT_SECRET="Github secret from Github -> Settings -> Developer Settings -> OAuth Apps"
 
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
+# resend (email provider) api key
+RESEND_API_KEY="resend api key"
 
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-
-RESEND_API_KEY=
-
-NEXT_PUBLIC_APP_URL=
+# base url
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
 ### Setup Prisma
+
 ```shell
 npx prisma generate
 npx prisma db push
@@ -92,6 +104,6 @@ npm run dev
 
 Running commands with npm `npm run [command]`
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
