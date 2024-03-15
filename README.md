@@ -45,27 +45,33 @@
 git clone https://github.com/Shahriyar-Hosen/next-auth-v5-advanced-guide.git
 ```
 
-### Install packages
+### Extract this system configuration
 
-###### npm
+### 1. Install packages
+
+##### npm | yarn | pnpm
 
 ```shell
 npm i
 ```
 
-###### yarn
+#### 1.1 Install dependencies and devDependencies
+
+##### dependencies
 
 ```shell
-yarn add
+npm i next-auth@beta @auth/prisma-adapter resend uuid zod bcryptjs react-hook-form @hookform/resolvers next-themes react-icons react-spinners sonner
 ```
 
-###### pnpm
+##### devDependencies
 
 ```shell
-pnpm i
+npm i -d @types/uuid @types/bcryptjs
 ```
 
-### Setup .env file
+### 2. all file and folder added
+
+### 3. Setup .env file
 
 ```env
 # Database Url
@@ -87,14 +93,14 @@ RESEND_API_KEY="resend api key"
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
-### Setup Prisma
+### 4. Setup Prisma
 
 ```shell
 npx prisma generate
 npx prisma db push
 ```
 
-### Start the app
+### 5. Start the app
 
 ```shell
 pnpm run dev
