@@ -74,7 +74,7 @@ npm i -d @types/uuid @types/bcryptjs
 #### 1.3 Install shadcn-ui component
 
 ```shell
-pnpm dlx shadcn-ui@latest add button card switch form input select sonner dialog dropdown-menu badge
+npx shadcn-ui@latest add button card switch form input select sonner dialog dropdown-menu badge
 ```
 
 ### 2. all file and folder added
